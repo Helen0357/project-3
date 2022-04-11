@@ -1,0 +1,27 @@
+* {
+    @include prifexer(box-sizing , border-box, webkit moz o)
+}
+.container {
+    
+    margin: auto;
+    padding:0 15px;
+    position: relative;
+    @media #{$minSmall}{
+width: 750px;
+    }
+    @media #{$minMideum}{
+        width: 970px;
+            }
+            @media #{$minLarge}{
+                width: 1170px;
+                    }
+
+        }
+.clearfix {
+    clear: both;
+}
+.center {
+@media #{$maxMobile} {
+    text-align: center;
+}
+}

@@ -1,0 +1,140 @@
+.footer {
+    background-color: rgb(206, 199, 199);
+    overflow: hidden;
+    padding-top: 30px;
+    // padding-bottom: 30px;
+    margin-top: 50px;
+    
+    .info , .contact , .galery {
+        float: $flaot-left;
+        @media #{$maxMobile} {
+            float: none;
+            
+            
+        }
+    }
+    .galery {
+        @media #{$minSmall}{
+            width: 100%;
+        }
+        @media #{$minMideum} {
+            width: 50%;
+        }
+        
+        .box-one {
+            overflow: hidden;
+            @media #{$minSmall} {
+                margin-bottom:20px;
+            }
+            img {
+               
+                width: 200px;
+                 height: 150px;
+                 @media #{$minSmall}  {
+                    float: $flaot-left;
+                 }
+                 
+            }
+            .text {
+                @media #{$minSmall}  {
+                    float: $flaot-left;
+                    
+                width: calc(100% - 230px);
+                margin: 0 15px;
+                 }
+             
+                h4 {
+                    color: $redColor;
+                    margin-top: 10px;
+                }
+                p{
+                    color: #777;
+                    line-height: 2;
+                }
+            }
+        }
+    }
+    .info {
+        
+        @media #{$minSmall}{
+            width: 50%;
+        }
+        @media #{$minMideum} {
+            width: 25%;
+        }
+       
+        ul {
+            list-style: none;
+            @media #{$minSmall} {
+                margin-left: -13%;
+
+            }
+            @media #{$maxMobile} {
+                margin-left: -7%;
+            }
+            text-align: left;
+            margin-top:30px;
+            li {
+                color: #777;
+                line-height: 1.8;
+                &:nth-of-type(4){
+                    margin-bottom: 20px;
+                }
+                &:last-of-type{
+                    span {
+                        color:$redColor;
+                    }
+                }
+            }
+            
+        }
+        h4 {
+            color:#777;
+            font-weight: bold;
+        }
+        p {
+            color:#777
+        }
+   
+    }
+    .contact {
+        @media #{$minSmall}{
+            width: 50%;
+        }
+        @media #{$minMideum} {
+            width: 25%;
+        }
+        form {
+            input:not(:last-of-type),
+            textarea {
+                margin-bottom: 10px;
+                border: 1px solid #777;
+                border-radius: 15px;
+                width:100%;
+                padding:10px;
+
+            }
+            textarea {
+                height: 160px
+            }
+           
+        }
+    }
+    h3 {
+        color:#777
+    }
+    hr {
+        color:#777
+    }
+    .copyright {
+            overflow: hidden;
+        .copy-text {
+            color:#777;
+            float: $flaot-left;
+        }
+        .copy-auther {
+            color: #777;
+            text-align: $float-right;
+        }
+    }
+}

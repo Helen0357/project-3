@@ -1,0 +1,37 @@
+.main-btn {
+    background-color: $redColor;
+    color: #fff;
+    border: none;
+    min-width: 120px;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.the-toggler {
+
+    background-color: $redColor;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 8px;
+    right: 30px;
+    @media #{$maxMobile} {
+        display: block;
+    }
+    span {
+        display: block;
+        background-color:rgb(201, 192, 192);
+        width: 30px;
+        height: 3px;
+        &:not(:last-of-type) {
+            margin-bottom: 3px;
+        }
+    }
+
+  
+
+}

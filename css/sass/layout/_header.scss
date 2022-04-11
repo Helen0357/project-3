@@ -1,0 +1,75 @@
+.header {
+    padding: 20px 0;
+    overflow: hidden;
+    border-bottom: 1px solid $greyColor;
+    .logo {
+        
+        @media #{$minSmall} {
+            text-align: center;
+            width: 100%;
+            float: none;
+        }
+        @media #{$minMideum} {
+            width: 30%;
+        float: $flaot-left;
+        text-align: $text-left;
+        }
+        @media #{$maxMobile} {
+            font-size: 13px;
+        }
+        h2 {
+            margin-bottom: 0;
+         
+        }
+
+    }
+    .nav-bar {
+        overflow: hidden;
+        
+        background-color: $redColor;
+        border-radius: 15px;
+        list-style: none;
+        @media #{$minSmall} {
+            text-align: center;
+            width: 100%;
+            float: none;
+            margin-top: 40px;
+            display: block;
+        }
+        @media #{$minMideum} {
+            width: 70%;
+            float: $flaot-left;
+            margin-top: 1em;
+        }
+        @media #{$maxMobile} {
+            display: none;
+            border-radius: 0%;
+            
+        }
+        li {
+            width: 20%;
+            float: $flaot-left;
+            // display: inline-block;
+            font-size: 18px;
+            text-align: center;
+            a {
+                display: block;
+                padding: 20px 10px;
+                color:#fff;
+                text-decoration: none;
+                &:hover {
+                    color:#ddd;
+                }
+            }
+            @media #{$maxMobile} {
+                display: block;
+                float : none;
+               width: 100%;
+               text-align: left;
+              
+                // text-align: right;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,86 @@
+.header {
+  padding: 20px 0;
+  overflow: hidden;
+  border-bottom: 1px solid #9c9c9c;
+}
+.header .logo {
+  width: 30%;
+  float: left;
+}
+.header .logo h2 {
+  margin-bottom: 0;
+}
+.header .nav-bar {
+  width: 70%;
+  float: left;
+  background-color: #e2494c;
+  border-radius: 15px;
+  list-style: none;
+}
+.header .nav-bar li {
+  width: 20%;
+  float: left;
+  font-size: 18px;
+  text-align: center;
+}
+.header .nav-bar li a {
+  display: block;
+  padding: 20px 10px;
+  color: #fff;
+  text-decoration: none;
+}
+.header .nav-bar li a:hover {
+  color: #ddd;
+}
+
+body {
+  background-color: #f6f6f6;
+  font-family: tahoma;
+  font-size: 16px;
+}
+
+.slider blockquote {
+  text-align: center;
+  width: 80%;
+  margin: 30px auto;
+  font-style: italic;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+.slider img {
+  max-width: 100%;
+}
+.slider .bullets {
+  text-align: center;
+}
+.slider .bullets li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #d1d1d1;
+  cursor: pointer;
+  margin-left: 4px;
+}
+.slider .bullets li.active {
+  background-color: white;
+  border: 2px solid black;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+button {
+  color: red;
+}
